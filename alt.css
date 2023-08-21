@@ -1,0 +1,54 @@
+.navbar {
+    position: fixed;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    overflow:visible;
+    text-align: center;
+}
+.title-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px 100px 100px; /*Make the grid smaller than the container*/
+    gap: 1px;
+    padding: 10px;
+    text-align: center;
+    border-style:none;
+    border-width: 15px 15px;
+    
+  }
+  
+  .grid-container > div {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+body, html {
+    margin: 0;
+    background-image: url("bricks.png");
+    background-position:inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /*Set the height of the body and html to the full viewport height*/
+    /*overflow: hidden; /*Hide any content that exceeds the viewport height*/
+    padding: 0; /*Remove any padding*/
+}

@@ -1,0 +1,97 @@
+<html>
+    <html>
+<html lang="en">
+
+<head>
+    <title>TIC-TAC-TOE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="alt.js"></script>
+    <link rel="stylesheet" href="tictac.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="title-text">
+            <h1>TIC TAC TOE</h1>
+        </div>
+    </div>
+
+    <!--top or padding-top messed up with the bcgrnd img so i had to go with
+        this way to add some gap between the header and the game board-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="gameboard">
+        
+        <!--The gameboard's buttons are named by their index-->
+        <!--So like ff stands for "first Y first X" = (0,0)-->
+
+        <!--First row-->
+        <div id="00">
+            <button class="boardbutton" 
+            onclick="main('ff'),AIbrain()" id="ff"></button>
+        </div>
+
+        <div id="01">
+            <button class="boardbutton" 
+            onclick="main('fs')" id="fs"></button>
+        </div>
+
+        <div ikd="02">
+            <button class="boardbutton" 
+            onclick="main('ft')" id="ft"></button>
+        </div>
+
+        <!--Second row-->
+        <div id="10">
+            <button class="boardbutton" 
+            onclick="main('sf')" id="sf"></button>
+        </div>
+
+        <div id="11">
+            <button class="boardbutton" 
+            onclick="main('ss')" id="ss"></button>
+        </div>
+
+        <div id="12">
+            <button class="boardbutton" 
+            onclick="main('st')" id="st"></button>
+        </div>
+
+        <!--Third row-->
+        <div id="20">
+            <button class="boardbutton" 
+            onclick="main('tf')" id="tf"></button>
+        </div>
+        <div id="21">
+            <button class="boardbutton" 
+            onclick="main('ts')" id="ts"></button>
+        </div>
+        <div id="22">
+            <button class="boardbutton" 
+            onclick="main('tt')" id="tt"></button>
+        </div>
+
+    </div>
+
+    <div class="resultwindow">
+
+        <div>
+        <p id="result">Result</p>
+        </div>
+
+        <div>
+        <button class="button" onclick="clearBoard()">Restart</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
