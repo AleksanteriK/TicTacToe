@@ -1,7 +1,5 @@
-This is a simple tictactoe game i made for fun from scratch. It right now only uses
+This is a simple tictactoe game made for fun from scratch
 
-Javascript method math.random to select the spot. So player plays against math.random at the moment
-
-Adding some more in depth for the AI opponent later
+Opponent chooses the spot randomly
 
 Try it here: https://www.cc.puv.fi/~e2202945/tictactoe/tictac.html
